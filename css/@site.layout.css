@@ -1,0 +1,71 @@
+﻿/*------------------------------------------------ 基本布局 */
+body {
+	text-align: center;
+}
+.wrapper, .container {
+	margin:0 auto;
+	text-align: left;
+}
+#header, #content, #footer {
+	margin-left:auto;
+	margin-right:auto;
+	text-align: left;
+}
+
+#content:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+#content {display: inline-block;}
+/* holly hack targets ie win only \*/
+*html #content {height: 1%;}
+#content {display: block;}
+/* end holly hack */
+
+#mainContent, #secondaryContent, #sideContent, #wideContent, #narrowContent {
+	float: left;
+	display: inline;
+}
+/*------------------------------------------------ 本站布局 */
+.wrapper, .container, #header, #content, #footer {
+	width: 950px;
+}
+#header {
+	padding-bottom: 0;
+}
+#content {
+	padding-bottom: 0;
+}
+#footer {
+	padding-bottom: 0;
+}
+#mainContent {
+}
+#secondaryContent {
+}
+#sideContent {
+}
+#wideContent {
+	width: 740px;
+}
+#narrowContent {
+	margin-left: 10px;
+	width: 200px;
+}
+
+/*------------------------------------------------ btm */
+#wideContent,
+#narrowContent {
+	margin-bottom:8px;
+}
+
+/*------------------------------------------------ 右侧窄栏 */
+#narrowContent {
+	border: 1px solid #ccc;
+	padding-bottom:4px;
+	width:198px;
+	background-color:#f6f6f6;
+}

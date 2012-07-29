@@ -1,0 +1,84 @@
+﻿body {
+	background-color:#FFFFFF;
+	color: #000000;
+}
+a, a:visited {
+	text-decoration: none;
+	color:#666666;
+}
+a:hover {
+	text-decoration:underline;
+	color:#FF6600;
+}
+
+/*------------------------------------------------ 位置样式 */
+.hidden {
+	display:none;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+
+/*------------------------------------------------ 字体样式 */
+.noBorder {
+	border:0 none;
+}
+.unLine, .unLine a {
+	text-decoration: none;
+}
+.fB {
+	font-weight:bold;
+}
+.fI {
+	font-style: italic;
+}
+.noWrap {
+	white-space: nowrap;
+}
+.f12px {
+	font-size:12px;
+}
+.f14px {
+	font-size:14px;
+}
+
+/*------------------------------------------------ 颜色样式 */
+.cGreen, .cGreen:visited, .cGreen a, .cGreen a:visited {
+	color:#078A00;
+}
+.cBlue, .cBlue:visited, .cBlue a, .cBlue a:visited {
+	color:#1164CB;
+}
+.cCBlue, .cCBlue:visited, .cCBlue a, .cCBlue a:visited {
+	color:#3366CC;
+}
+.cOrange, .cOrange:visited, .cOrange a, .cOrange a:visited {
+	color:#FF6600;
+}
+.cBlack, .cBlack:visited, .cBlack a, .cBlack a:visited {
+	color:#000;
+}
+.cWhite, .cWhite:visited, .cWhite a, .cWhite a:visited {
+	color:#FFF;
+}
+.cGray, .cGray:visited, .cGray a, .cGray a:visited {
+	color:#808080;
+}
+.cDGray, .cDGray:visited, .cDGray a, .cDGray a:visited {
+	color:#5A5A5A;
+}
+.cLGray, .cLGray:visited, .cLGray a, .cLGray a:visited {
+	color:#C0C0C0;
+}
+.cRed, .cRed:visited, .cRed a, .cRed a:visited {
+	color:Red;
+}
+.cDRed, .cDRed:visited, .cDRed a, .cDRed a:visited {
+	color:#ba2636;
+}
+.cGreen:hover, .cGreen:hover, .cGreen a:hover, .cGreen a:hover, .cBlue:hover, .cBlue:hover, .cBlue a:hover, .cBlue a:hover, .cOrange:hover, .cOrange:hover, .cOrange a:hover, .cOrange a:hover, .cBlack:hover, .cBlack:hover, .cBlack a:hover, .cBlack a:hover, .cWhite:hover, .cWhite:hover, .cWhite a:hover, .cWhite a:hover, .cGray:hover, .cGray:hover, .cGray a:hover, .cGray a:hover, .cDGray:hover, .cDGray:hover, .cDGray a:hover, .cDGray a:hover, .cLGray:hover, .cLGray:hover, .cLGray a:hover, .cLGray a:hover, .cRed:hover, .cRed:hover, .cRed a:hover, .cRed a:hover, .cDRed:hover, .cDRed:hover, .cDRed a:hover, .cDRed a:hover {
+	color:#FF6600;
+}

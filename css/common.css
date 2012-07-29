@@ -1,0 +1,257 @@
+@charset "utf-8";
+/*--------- reset -- */
+html {
+	overflow-y: auto;
+}
+body, ul, ol, dl, dt, dd, h1, h2, h3, h4, h5, h6, hr, p, blockquote, pre, form, fieldset {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: normal normal normal 14px "微软雅黑","宋体", Arial, Tahoma, Helvetica, sans-serif;
+	font-size-adjust: none;
+}
+button, input, select, textarea {
+	font-size: 100%;
+	font-family:inherit;
+	font-weight:inherit;
+}
+hr {
+	margin:1px 0;
+	border:0 none;
+	height:1px;
+}
+address, blockquote, cite, strong, em, abbr, acronym, code, dfn, var {
+	font-style: normal;
+	font-weight: normal;
+}
+code, kbd, pre, samp, tt {
+	font-family: "Courier New", Courier, monospace;
+}
+h1 {
+	font-size:1.8em;
+}
+h2 {
+	font-size:1.6em;
+}
+h3 {
+	font-size:1.4em;
+}
+h4, h5, h6 {
+	font-weight:normal;
+}
+small {
+	font-size:10px;
+}
+ol, ul, dl {
+	list-style-type: none;
+}
+img {
+	vertical-align: top;
+	border: 0 none;
+}
+table {
+	border: 0 none;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+abbr[title], acronym[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+/*------------------------------------------------ 基本布局 */
+body {
+	text-align: center;
+}
+.wrapper, .container {
+	margin:0 auto;
+	text-align: left;
+}
+#header, #content, #footer {
+	margin-left:auto;
+	margin-right:auto;
+	text-align: left;
+	width:950px;
+}
+#content:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+#content {display: inline-block;}
+/* holly hack targets ie win only \*/
+*html #content {height: 1%;}
+#content {display: block;}
+/* end holly hack */
+
+#main_content, #left_content{
+	float: left;
+	display: inline;
+}
+#left_content{
+	width:225px;
+	padding-right:5px;
+}
+#main_content{
+	width:720px;
+}
+/*------------ 链接 --*/
+body {
+	background-color:#FFFFFF;
+	color: #232323;
+}
+a, a:visited {
+	text-decoration: none;
+	color:#001C48;
+}
+a:hover {
+	text-decoration:underline;
+	color:#FF6600;
+}
+/*------------- 公用 --- */
+
+/*--- 页头 --*/
+#header{
+	padding-bottom:8px;
+}
+#footer{
+	margin-top:15px;
+}
+.logo_area{
+	overflow:hidden;
+	zoom:1;
+	padding:10px 0 20px 0;
+	height:32px;
+}
+.logo{
+	float:left;
+	display:inline;
+	width:145px;
+	padding-top:7px;
+}
+.company_name{
+	float:left;
+	display:inline;
+	font-family:"黑体", "微软雅黑", "宋体";
+	color:#336699; 
+	font-size:28px;
+}
+.other_link{
+	float:right;
+	display:inline;
+	padding-top:5px;
+}
+.other_link a{
+	display:inline-block;
+	width:80px;
+	height:25px;
+	border:1px solid #dedfde;
+	background:url(../img/btn_cen.gif) no-repeat left center;
+	line-height:25px;
+	text-align:center;
+	font-size:12px;
+}
+.other_link a:link, .other_link a:visited{
+	color:#336699;
+}
+.other_link a:hover{
+	color:#ff6600;
+}
+.main_nav{
+	overflow:hidden;
+	zoom:1;
+	height:35px;
+	line-height:30px;
+	text-align:center;
+	background:url(../img/nav_bg.gif) repeat-x left center;
+	color:#fff;
+}
+.main_nav a{
+	display:inline-block;
+	padding:0 25px;
+}
+.main_nav a:link, .main_nav a:visited{
+	color:#fff;
+}
+.main_nav a.curr:link, .main_nav a.curr:visited{
+	font-weight:bold;
+}
+/*--- 页脚*/
+.footer_box{
+	padding:15px 0;
+	background:url(../img/foot_bg.gif) repeat-x left top;
+	text-align:center;
+	font-size:12px;
+	line-height:20px;
+	color:#333333;
+}
+/*------ 通用box  */
+.box{
+	border:1px solid #D6EBFF;
+	margin-bottom:5px;
+	padding-bottom:5px;
+}
+.box h3{
+	font-size:14px;
+	background-color:#D6EBFF;
+	height:30px;
+	line-height:30px;
+	padding-left:10px;
+}
+.box_content{
+	padding:9px;
+}
+/*------ 翻页条 --*/
+.page_bar{
+	padding:5px 0;
+}
+.page_bar a{
+	display:inline-block;
+	margin:0 1px;
+	padding:4px 7px;
+	border:1px solid #999999;
+}
+.page_bar a.cur_page{
+	border:1px solid #fff;
+}
+/*------  左边栏  */
+.item_block{
+	margin-bottom:5px;
+	padding-bottom:5px;
+	border:1px solid #D6EBFF;
+}
+.item_block h3{
+	background-color:#336699;
+	color:#fff;
+	font-size:14px;
+	height:30px;
+	line-height:30px;
+	padding-left:10px;
+}
+.item_block ul{
+	padding-top:5px;
+}
+.item_block ul li{
+	height:27px;
+	padding:2px 7px;
+}
+.item_block ul li a{
+	display:block;
+	height:28px;
+	line-height:28px;
+	padding-left:25px;
+	background:#f0f8ff url(../img/s_arrow.gif) no-repeat 15px center;
+}
+.goods_block ul li a{
+	background:#f0f8ff url(../img/s_arrow.gif) no-repeat 15px center;
+}
+.goods_block ul li.nav_curr a{
+	font-weight:bold;
+	background:url(../img/s_c_arrow.gif) no-repeat 15px center;
+	background-color:transparent;
+}
+li.nav_curr a:link, li.nav_curr a:visited{
+	color:#ff6600;
+}

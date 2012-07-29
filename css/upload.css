@@ -1,0 +1,110 @@
+/* ------- 文件上传 */
+.file_upload{
+	padding:10px 30px;
+}
+.file_upload h4.product_send_title{
+	font-size:20px;
+	font-weight:bold;
+	margin-bottom:15px;
+}
+.file_upload ul li{
+	overflow:hidden;
+	zoom:1;
+	padding-bottom:10px;
+}
+.pro_title{
+	padding-bottom:3px;
+	color:#3366FF;
+}
+.in_word input{
+	color:#555555;
+}
+.pro_name .in_word input{
+	border:1px solid #888888;
+	width:200px;
+	height:25px;
+	padding:2px 6px;
+}
+.pro_picure .in_word input{
+	border-width:1px;
+	padding:2px 6px;
+}
+.nomal_exp .text_area{
+	width:560px;
+	height:80px;
+}
+.nomal_exp .text_area textarea{
+	border:1px solid #888888;
+	width:100%;
+	padding:5px;
+	height:60px;
+	line-height:20px;
+	overflow:auto;
+}
+.detail_exp .text_area{
+	width:560px;
+	height:180px;
+}
+.detail_exp .text_area textarea{
+	border:1px solid #888888;
+	width:100%;
+	padding:5px;
+	height:160px;
+	line-height:20px;
+	overflow:auto;
+}
+.submit input{
+	cursor:pointer;
+	width:100px;
+	height:32px;
+	font-size:16px;
+}
+/*---------------------- 留言 ----*/
+.file_upload ul .message_item{
+	margin-bottom:10px;
+	padding:5px 0 5px 0;
+	border-bottom:1px dashed #999999;
+}
+.msg_title{
+	color:#3366FF;
+}
+.msg_text{
+	padding:5px 0 12px 0;
+	font-size:12px;
+	line-height:20px;
+	color:#111111;
+}
+.msg_inf{
+	font-size:12px;
+	overflow:hidden;
+	color:#666666;
+}
+.msg_inf span{
+	margin-right:10px;
+}
+/*---------------------- 管理产品 -- */
+.product_tbale{
+	margin-bottom:10px;
+	border:1px solid #cccccc;
+	width:100%;
+}
+.product_tbale td, .product_tbale th{
+	padding:5px 0;
+	text-align:center;
+	border:1px solid #cccccc;
+	vertical-align:middle;
+}
+.ad_pic{
+	width:160px;
+}
+.ad_pic img{
+	max-width:100px;
+	max-width:100px;
+}
+.operate{
+	width:160px;
+}
+.operate a{
+	margin:0 5px;
+}
+

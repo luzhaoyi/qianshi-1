@@ -1,0 +1,128 @@
+/*---------- 产品列表页*/
+/*---  产品选项卡*/
+.tab{
+	position:relative;
+	margin:10px 30px 0 30px;
+	height:30px;
+	border-bottom:1px solid #b3b3b3;
+	font-size:12px;
+}
+.tab_list{
+	position:absolute;
+	top:6px;
+	left:10px;
+	z-index:10;
+	height:25px;
+	line-height:25px;
+}
+.tab_list a{
+	float:left;
+	display:inline;
+	margin-right:5px;
+	width:82px;
+	height:25px;
+	text-align:center;
+	background:url(../img/tab_2.gif) no-repeat left top;
+}
+.tab_list a.tab_on{
+	background:url(../img/tab_1.gif) no-repeat left top;
+}
+.tab_list a.tab_on:link, .tab_list a.tab_on:visited{
+	color:#000;
+	font-weight:bold;
+}
+/*---  产品列表*/
+.list_op{
+	padding:10px 30px;
+}
+.item_list{
+	position:relative;
+	overflow:hidden;
+	zoom:1;
+	padding-top:10px;
+	border-bottom:1px dashed #aaaaaa;
+}
+
+dl.item_list dt{
+	float:left;
+	display:inline;
+	width:100px;
+	height:100px;
+	overflow:hidden;
+}
+dl.item_list dt img{
+	max-width:100px;
+	max-height:100px;
+}
+dd.word_exp{
+	float:left;
+	display:inline;
+	overflow:hidden;
+	margin-left:20px;
+	margin-right:10px;
+	width:375px;
+	height:110px;
+}
+dd.word_exp h4{
+	padding-bottom:6px;
+}
+dd.word_exp h4 a:link, dd.word_exp h4 a:visited{
+	color:#6699cc;
+}
+dd.word_exp h4 a:hover{
+	color:#ff6600;
+}
+dd.word_exp p{ 
+	font-size:12px;
+	color:#666666;
+}
+.operate_btn{
+	float:left;
+	display:inline;
+	width:135px;
+	padding:5px 0 0 0;
+	text-align:center;
+}
+.operate_btn .btn{
+	padding:2px 0;
+}
+ul.b_list{
+	overflow:hidden;
+	zoom:1;
+}
+ul.b_list li{
+	float:left;
+	display:inline;
+	width:200px;
+	margin-right:12px;
+	text-align:center;
+}
+.list_img_area{
+	height:200px;
+}
+.list_img_area img{
+	vertical-align:middle;
+}
+.list_p_name{
+	padding-bottom:15px;
+}
+.list_opera{
+	padding-bottom:5px;
+}
+.list_opera a{
+	display:inline-block;
+	overflow:hidden;
+	margin:0 5px;
+	width:69px;
+	line-height:25px;
+	height:25px;
+	text-indent:-99em;
+}
+.list_opera a.call_me{
+	background:url(../img/liuyan.gif) no-repeat left 4px;
+}
+.list_opera a.send_message{
+	background:url(../img/liuyan.gif) no-repeat left -26px;
+}
+
+
