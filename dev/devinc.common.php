@@ -14,7 +14,7 @@ define('APP_DB_PREFIX', '201207quanshi');
 require_once(ROOT_DIR . '/dev/devinc.bad.php');
 require_once(ROOT_DIR . '/dev/devinc.user.php');
 require_once(ROOT_DIR . '/dev/devinc.mdb2.php');
-require_once(ROOT_DIR . '/dev/devinc.string.php');
+require_once(ROOT_DIR . '/dev/devinc.safe.php');
 require_once(ROOT_DIR . '/dev/devinc.action.php');
 
 

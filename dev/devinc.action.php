@@ -1,5 +1,20 @@
 <?php
 
+function s_action_error($message="no params.", $code=99, $type="json") {
+    $error = array(
+        'error'     => $code,
+        'errmsg'    => $message,
+    );
+
+    //if ($type === "josn") {
+        s_action_json($error);
+
+    //} else if ($type === 'xml') {
+        //s_action_xml($error);
+    //}
+}
+
+
 function s_action_user($update=true, $checkref=true) {
     return true;
 }

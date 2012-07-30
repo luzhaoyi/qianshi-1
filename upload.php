@@ -61,6 +61,7 @@ if (file_exists($path)
     return s_action_error('图片已存在', 500);
 }
 
+var_dump($image);
 
 if (move_uploaded_file($image['tmp_name'], $path)) {
     //没有移动img目录中去
@@ -69,9 +70,16 @@ if (move_uploaded_file($image['tmp_name'], $path)) {
 
 
 //生成缩略图（100X100）
-$thumb100 = IMGS_DIR . '/thumb/' . $date . '/' . $image['name'];
+$thumb100 = IMGS_DIR . '/thumb/' . $date . '/100x100' . $image['name'];
 
-if (false === ( image_adjust($path, $thumb) )) {
+if (false === ( image_adjust($path, $thumb, 100, 100) )) {
+    return s_action_error('生成缩略图失败', 500);
+}
+
+//生成缩略图（100X100）
+$thumb200 = IMGS_DIR . '/thumb/' . $date . '/200x200' . $image['name'];
+
+if (false === ( image_adjust($path, $thumb, 200, 200) )) {
     return s_action_error('生成缩略图失败', 500);
 }
 
